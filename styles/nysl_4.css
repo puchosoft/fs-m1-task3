@@ -1,0 +1,162 @@
+* {
+margin:0;
+padding:0;
+}
+
+html {
+  height:100%;
+}
+
+body {
+  height:inherit;
+	font-family: "Comic Sans MS";
+  background-color:grey;
+  background-image:url("../img/design2_image1.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+
+/*  Se define un contenedor header que contiene 3 secciones: encabezado, banner y titulo1 */
+header {
+  width:100%;
+  height:40%;
+  position:relative;
+}
+
+section#encabezado {
+  width:98%;
+  height:80%;
+  color:black;
+  position:absolute;
+  float:left;
+  left:2%;
+  z-index:10;
+  display:flex;
+  line-height: 4;
+  font-size:2em;
+  font-style:italic;
+  text-shadow: 3px 3px 5px white;
+}
+
+section#banner{
+  width:100%;
+  height:73%;
+  position:absolute;
+  bottom:0%;
+  z-index:1;
+}
+
+section#titulo1 {
+  width:100%;
+  height:20%;
+  position:absolute;
+  bottom:0%;
+  float:left;
+  display: flex;
+  justify-content: center;
+  line-height: 1.8;
+  color:white;
+  background-color:black;
+  z-index:10;
+}
+
+/*  Se define un contenedor main que contiene un aside y un article */
+main {
+  width:100%;
+  height:60%;
+  position:relative;
+  background-color:rgba(0,0,0,.6);
+}
+
+aside {
+  width:20%;
+  height:100%;
+  float:left;
+}
+
+article {
+  width:80%;
+  height:100%;
+  float:left;
+  color:white;
+  text-shadow: 2px 2px black;
+}
+
+/*  El contenedor logo se deja libre y dependiente de body para tener libertad de accion */
+div#logo {
+  width:20%;
+  height:20%;
+  position:relative;
+  float:right;
+  bottom:74%;
+  z-index:20;
+  background-image:url("../img/nysl_logo.png");
+  background-repeat: no-repeat;
+  background-size:contain;
+}
+
+/*  El contenedor nav se deja libre y dependiente de body para tener libertad de accion
+    Contiene los links dispuestos en horizontal, con color de fondo y borde */
+nav {
+  position:relative;
+  float:left;
+  width:20%;
+  height:60%;
+  bottom:60%;
+  display: flex;
+  flex-direction:column;
+  justify-content:  space-around;
+  align-items: center;
+}
+
+/*  Se definen las caracteristicas de los links normales y visitados */
+nav a:link , nav a:visited{
+  display:block;
+  width:40%;
+  height:11%;
+  line-height:2.5;
+  text-align: center;
+  color:white;
+  border: 3px solid black;
+  border-radius: 35%;
+  background-color:darkblue;
+  text-decoration: none;
+  box-shadow: 5px 5px 10px black;
+}
+
+/*  Se definen las caracteristicas del link actual */
+#actual {
+  background-color:green;
+}
+
+main h2 {
+  text-align:center;
+  margin-top:2em;
+}
+
+main h3 {
+  padding-top:1em;
+}
+
+main ol.listanum1{
+  padding-left:2em;
+}
+
+main ol.listanum1 li{
+  padding-bottom:1em;
+}
+
+main ol.listanum2{
+  list-style-type: lower-alpha;
+  padding-left:2em;
+}
+
+main ol.listanum2 li{
+  padding-bottom:0em;
+}
+
+main ul {
+  list-style:square;
+  padding-left: 2em;
+}
