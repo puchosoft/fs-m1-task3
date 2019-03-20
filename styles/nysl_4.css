@@ -83,7 +83,7 @@ article {
   text-shadow: 2px 2px black;
 }
 
-/*  El contenedor logo se deja libre y dependiente de body para tener libertad de accion */
+/*  El contenedor "logo" se deja libre y dependiente de body para tener libertad de accion */
 div#logo {
   width:20%;
   height:20%;
