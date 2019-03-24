@@ -3,7 +3,7 @@ git config --global user.name "Jose Luis Gonzalez"
 git config --global user.email "puchosoft@gmail.com"
 
 # Manager de credenciales
-git config credential.helper ''
+git config credential.helper manager
 
 # Remotos
 git remote rm origin
