@@ -3,6 +3,7 @@ echo Credenciales actuales
 echo ---------------------
 git config --global user.name
 git config --global user.email
+git config credential.helper
 echo
 echo Remotos actuales
 echo ----------------
