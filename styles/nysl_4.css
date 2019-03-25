@@ -18,11 +18,11 @@ body {
 }
 
 
-/*  Se define un contenedor "header" que contiene 3 secciones: encabezado, banner y titulo1 */
+/*  Se define un contenedor "header" que contiene 3 secciones: encabezado, titulo1 y logo */
 header {
   width:100%;
   height:30%;
-  position:relative;
+  position:fixed;
   z-index:5;
 }
 
@@ -59,7 +59,6 @@ section#titulo1 {
   z-index:10;
 }
 
-/*  El contenedor "logo" se deja libre y dependiente de body para tener libertad de accion */
 div#logo {
   position:absolute;
   float:right;
@@ -75,9 +74,11 @@ div#logo {
 
 /*  Se define un contenedor "main" que contiene un aside y un article */
 main {
+  position:fixed;
+  top:30%;
   width:100%;
   height:70%;
-  position:relative;
+  background-color:rgba(0,0,0,.6);
 }
 
 aside {
@@ -97,7 +98,6 @@ nav {
   flex-direction:column;
   justify-content:  space-around;
   align-items: center;
-  background-color:rgba(0,0,0,.6);
 }
 
 /*  Se definen las caracteristicas de los links normales y visitados */
@@ -121,21 +121,31 @@ nav a:link , nav a:visited{
 }
 
 article {
-  width:74%;
   float:left;
+  width:74%;
   padding-left:2%;
   padding-right:4%;
+  height:100%;
   color:white;
-  background-color:rgba(0,0,0,.6);
+  overflow:auto;
 }
 
 article#rules {
+  font-family: sans-serif;
   text-shadow: 2px 2px black;
 }
 
 article#info {
   font-family: sans-serif;
-  text-shadow: 0px;
+}
+
+article#info a:link, article#contact a:link{
+  color:yellow;
+}
+
+article#about p{
+  margin-left:2%;
+  margin-top:0;
 }
 
 article li {
@@ -187,16 +197,44 @@ main ul#item-redondo {
 }
 
 table, th, td {
-  border: 1px solid white;
+  border: 0px solid white;
   border-collapse:collapse;
 }
 
-th {
+table.tabla1, .tabla2 {
+  width:100%;
+  margin-bottom:2em;
+}
+
+.tabla1 th {
+  font-size:1.2em;
+  text-align:left;
   text-decoration:underline;
 }
-
-table#tabla1 {
-  width:100%;
+.tabla2 th {
+  text-align:left;
 }
 
-  
+.col30{
+  width:30%;
+}
+.col50{
+  width:50%;
+}
+
+.tabla1 td:first-child {
+  padding-left:2em;
+}
+
+.italica{
+  font-style:italic;
+}
+.negrita{
+  font-weight:bold;
+}
+.derecha{
+  float:right;
+}
+.ident_1em{
+  padding-left:1em;
+}
